@@ -1,0 +1,17 @@
+extends ./layout.jade
+
+block content
+
+    section.hero-vd
+      header.header.clearfix
+        canvas.dots-canvas
+        video(poster="images/brian_ley.png", autoplay, loop)#bgvid
+          source(src="videos/biran_ley_edited.mp4", type="video/mp4")
+          | Your browser does not support the video tag.
+        .vids-overlay    
+        include ./partials/_nav.jade
+        include ./partials/_hero.jade
+    include ./partials/_section-2.jade
+    include ./partials/_section-3.jade
+    include ./partials/_section-4.jade
+    include ./partials/_section-5.jade

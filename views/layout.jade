@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  include ./partials/_head.jade
+  
+  body
+
+    block content
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+    script(src='/static/js/bootstrap.min.js')
+    script(src='https://maps.googleapis.com/maps/api/js?callback=initMap')
+    script(src='/static/js/mailer.js')
+    script(src='/static/js/main.js')

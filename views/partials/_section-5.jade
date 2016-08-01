@@ -1,0 +1,36 @@
+section.sect-contacts
+  .container
+    .map-cont
+      #map
+      .list-group.offices
+        h3.list-group-item
+        #office_sv.list-group-item.lists-off
+          span.photo
+            img(src='images/silicon-valley.png' alt='')
+          h4 Silicon Valley
+          p 25 Taylor St #[br] San Francisco, CA 94102
+    h2.h-title Contact Us
+    .row
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        h3 Ready to analyze your customer network?
+        form(action='/', name='contact_form', id='contact_form', method='post')
+          .row
+            .col-xs-6.col-sm-6
+              .form-group
+                input(name='name', type='text', value='', id='name', placeholder='Name').form-control
+            .col-xs-6.col-sm-6
+              .form-group
+                input(name='email', type='email', value='', id='email', placeholder='Email Address').form-control
+            .col-xs-6.col-sm-6
+              .form-group
+                input(name='phone', type='text', value='', id='phone', placeholder='Phone Number').form-control
+            .col-xs-6.col-sm-6
+              .form-group
+                input(name='company', type='text', value='', id='company', placeholder='Company').form-control
+            .col-xs-12
+              .form-group
+                textarea(name='message', rows='5', id='message', placeholder='Message').form-control
+            input(name='submit', type='submit', value='Submit', id='submit').btn.btn-primary
+                
+        
+          
